@@ -16,8 +16,8 @@ model = pickle.load(open('Pickle.pkl','rb'))
 def main():
     # front end elements of the web page
     html_temp = """ 
-    <div style ="background-color:#002E6D;padding:20px;font-weight:15px"> 
-    <h1 style ="color:white;text-align:center;"> Sport Prediction</h1> 
+    <div style ="background-color:#FF0000;padding:10px;font-weight:10px"> 
+    <h1 style ="color:white;>Ephraim Adongo Sport Prediction</h1> 
     </div> 
     """
 
