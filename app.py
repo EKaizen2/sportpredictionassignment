@@ -10,7 +10,7 @@ from sklearn.linear_model import LinearRegression
 
 
 # loading the trained model
-model = pickle.load(open('PickleModel.pkl','rb'))
+model = pickle.load(open('Pickle.pkl','rb'))
 
 
 def main():
