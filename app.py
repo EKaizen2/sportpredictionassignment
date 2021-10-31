@@ -30,7 +30,7 @@ def main():
 #     balance = st.number_input("Please enter the players Balance Attribute", 0, 100000000, 0)
 #     stamina = st.number_input("Please enter the players Stamina Attribute", 0, 100000000, 0)
 
-#     uploaded_file = st.file_uploader("Choose a XLSX file", type="xlsx")
+    uploaded_file = st.file_uploader("Choose a XLSX file", type="xlsx")
 
     global dataframe
     if uploaded_file:
