@@ -39,7 +39,7 @@ def main():
         # st.dataframe(df)
         # st.table(df)
 
-    # attributes = [ball_control, short_passing, dribbling, crossing, curve]
+    attributes = [ball_control, short_passing, dribbling, crossing, curve]
     #
     result = ""
     #
@@ -53,13 +53,12 @@ def main():
 #           dataframe[i].replace(np.nan, min, inplace=True)
 
       scaler = StandardScaler()
-      scaler.fit(dataframe)
-      featureshost = scaler.transform(dataframe)
+      scaler.fit([attributes])
+      featureshost = scaler.transform([attributes])
       prediction = model.predict(featureshost)
 
       result = prediction
       st.write(result)
-
 
 if __name__ == '__main__':
     main()
